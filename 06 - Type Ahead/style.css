@@ -50,7 +50,11 @@ input.search {
   margin: 0;
   padding: 20px;
   transition: background 0.2s;
+<<<<<<< HEAD
   display: block;
+=======
+  display: flex;
+>>>>>>> fe9aba8 (projects)
   justify-content: space-between;
   text-transform: capitalize;
 }

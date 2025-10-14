@@ -27,7 +27,10 @@
     .panels {
       min-height: 100vh;
       overflow: hidden;
+<<<<<<< HEAD
       display: flex;
+=======
+>>>>>>> fe9aba8 (projects)
     }
 
     .panel {
@@ -45,6 +48,7 @@
       font-size: 20px;
       background-size: cover;
       background-position: center;
+<<<<<<< HEAD
       flex: 1;
       justify-content: center;
       align-items: center;
@@ -57,12 +61,22 @@
     .panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
     .panel4 { background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1zwhySGCEBxRRFYIcQgvOLOpRGqrT3d7Qng&s); }
     .panel5 { background-image:url(https://img.freepik.com/photos-premium/photo-detaillee-yeux-cameleon_129172-1206.jpg?w=360); }
+=======
+    }
+
+    .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
+    .panel2 { background-image:url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500); }
+    .panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
+    .panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
+    .panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
+>>>>>>> fe9aba8 (projects)
 
     /* Flex Children */
     .panel > * {
       margin: 0;
       width: 100%;
       transition: transform 0.5s;
+<<<<<<< HEAD
      
       flex: 1 0 auto;
       display: flex;
@@ -77,6 +91,10 @@
 
 
  
+=======
+    }
+
+>>>>>>> fe9aba8 (projects)
     .panel p {
       text-transform: uppercase;
       font-family: 'Amatic SC', cursive;
@@ -90,7 +108,10 @@
 
     .panel.open {
       font-size: 40px;
+<<<<<<< HEAD
       flex: 5;
+=======
+>>>>>>> fe9aba8 (projects)
     }
 
   </style>
@@ -125,6 +146,7 @@
   </div>
 
   <script>
+<<<<<<< HEAD
     const panels = document.querySelectorAll('.panel');
     function toggleOpen(){
       this.classList.toggle('open');
@@ -138,6 +160,8 @@
     }
     panels.forEach(panel=> panel.addEventListener('click',toggleOpen));
     panels.forEach(panel=> panel.addEventListener('transitionend',toggleActive));
+=======
+>>>>>>> fe9aba8 (projects)
 
   </script>
 

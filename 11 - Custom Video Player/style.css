@@ -160,6 +160,7 @@ input[type=range]::-moz-range-thumb {
   background: #ffc600;
   cursor: pointer;
 }
+<<<<<<< HEAD
 .speed-overlay {
   position: absolute;
   top: 50%;
@@ -174,3 +175,5 @@ input[type=range]::-moz-range-thumb {
   transition: opacity 0.3s ease;
 }
 
+=======
+>>>>>>> fe9aba8 (projects)
