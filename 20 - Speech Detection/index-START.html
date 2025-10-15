@@ -12,6 +12,34 @@
 
 <script>
   window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const recognition = new SpeechRecognition();
+
+  recognition.interimResults = true;
+  recognition.continuous = true;
+
+
+  let p = document.createElement('p');
+  const words = document.querySelector('.words');
+  words.appendChild(p);
+
+recognition.addEventListener('result', e => {
+  let transcript = '';
+  for (let i = e.resultIndex; i < e.results.length; i++) {
+    transcript += e.results[i][0].transcript;
+  }
+
+  p.textContent = transcript;
+
+  if (e.results[e.results.length - 1].isFinal) {
+    p = document.createElement('p');
+    words.appendChild(p);
+  }
+});
+
+  recognition.addEventListener('end',recognition.start);
+
+  recognition.start();
+
 
 
 </script>
